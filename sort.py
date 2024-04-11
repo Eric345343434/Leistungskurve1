@@ -1,19 +1,27 @@
 def bubble_sort(arr):
- 
     n = len(arr)
-    swapped = False  # Optimierung: Wenn keine Vertauschungen erfolgen, ist das Array bereits sortiert
-    for i in range(n - 1):
-        for j in range(0, n - i - 1):
+    # optimize code, so if the array is already sorted, it doesn't need
+    # to go through the entire process
+    # Traverse through all array elements
+    for i in range(n-1):
+
+        # range(n) also work but outer loop will
+        # repeat one time more than needed.
+        # Last i elements are already in place
+        swapped = False
+        for j in range(0, n-i-1):
+
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
             if arr[j] > arr[j + 1]:
-                # Elemente vertauschen, wenn sie in der falschen Reihenfolge sind
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 swapped = True
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
         if not swapped:
-            # Wenn keine Vertauschungen vorgenommen wurden, die Hauptschleife verlassen
-            break
+            # if we haven't needed to make a single swap, we
+            # can just exit the main loop.
+            return
 
-
-
-    
 
     
