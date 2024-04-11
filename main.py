@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 from load_data import load_data
 from sort import bubble_sort
 
@@ -30,6 +31,8 @@ def plot_line_chart(sorted_power_W):
     # Diagramm anzeigen
     plt.show()
 
+    # Speichern des Diagramms im Ordner 'figures'
+    plt.savefig('Leistungskurve1/figures/Leistungskurve.png')
 
 # Funktionsaufruf, um das Diagramm zu zeichnen
 plot_line_chart(sorted_power_W)
