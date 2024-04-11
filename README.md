@@ -18,4 +18,5 @@
 ## Benutzung
 
 - Starte das Programm mit `python main.py` 
+- Das Diagramm finden Sie unter den Ordner figures 
 
