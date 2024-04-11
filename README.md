@@ -17,5 +17,5 @@
 
 ## Benutzung
 
-- Starte das Programm mit `python main.py`
+- Starte das Programm mit `python main.py` 
 
