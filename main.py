@@ -28,11 +28,11 @@ def plot_line_chart(sorted_power_W):
     # Optional: Gitterlinien hinzufügen
     plt.grid(True)
     
+    # Speichern des Diagramms im Ordner 'figures'
+    plt.savefig('figures/Leistungskurve') 
+    
     # Diagramm anzeigen
     plt.show()
-
-    # Speichern des Diagramms im Ordner 'figures'
-    plt.savefig('Leistungskurve1/figures/Leistungskurve.png')
 
 # Funktionsaufruf, um das Diagramm zu zeichnen
 plot_line_chart(sorted_power_W)
