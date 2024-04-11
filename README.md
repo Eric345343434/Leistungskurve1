@@ -13,7 +13,7 @@
     - Linux: `source .venv/bin/activate`
 - Installiere die Pakete
     - Entweder mit `pip install <paketname>`
-    - oder mit `pip install -r requirement.txt`
+    - oder mit `pip install -r requirements.txt`
 
 ## Benutzung
 
